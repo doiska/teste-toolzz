@@ -110,7 +110,7 @@ export function LoginForm() {
                 className="flex items-center gap-2 w-full rounded-lg text-sm p-4 border border-destructive/60 bg-destructive/10"
             >
               <FaExclamationCircle className="text-destructive text-lg" />
-              <p className="text-destructive-foreground">{error && error.message}</p>
+              <p>{error && error.message}</p>
             </div>
         )}
         {isSuccess && (
@@ -118,7 +118,7 @@ export function LoginForm() {
                 className="flex items-center gap-2 w-full rounded-lg text-sm p-4 border border-green-800/60 bg-green-500/10"
             >
               <FaCheckCircle className="text-green-500 text-lg" />
-              <p className="text-success-foreground">
+              <p>
                 Sucesso! Aguarde o login para continuar.
               </p>
             </div>
