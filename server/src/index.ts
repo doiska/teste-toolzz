@@ -13,6 +13,10 @@ const app = new Hono()
 
 app.use(cors())
 
+app.get('/health', async (c) => {
+  return c.json({ status: "ok" }, 200)
+});
+
 app.post('/auth/login', async (c) => {
   const { username, password, rememberMe, captcha } = await c.req.json();
 
