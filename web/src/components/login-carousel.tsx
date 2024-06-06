@@ -74,7 +74,7 @@ export function LoginCarousel() {
       >
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
         <button className="absolute top-16 left-16 z-20 size-10 rounded-full border border-white">
-          <FaChevronLeft className="size-full p-3" />
+          <FaChevronLeft className="text-white size-full p-3" />
         </button>
         <div className="absolute flex flex-col gap-4 bottom-40 left-16 z-20 pr-24">
           <div className="flex gap-2">
