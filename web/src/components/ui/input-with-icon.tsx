@@ -16,12 +16,10 @@ const InputWithIcon = React.forwardRef<HTMLInputElement, InputProps>(
                   className
               )}
           >
-            <span className="pr-1">
-              {icon}
-            </span>
+            {icon}
             <input
                 type={type}
-                className="w-full p-2 placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full p-2 pl-3 placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 bg-inherit"
                 ref={ref}
                 {...props}
             />
