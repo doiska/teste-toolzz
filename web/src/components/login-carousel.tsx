@@ -66,8 +66,8 @@ export function LoginCarousel() {
   return (
       <Carousel
           opts={{
-            loop: true,
             align: "center",
+            loop: false
           }}
           className="relative size-full overflow-hidden"
           setApi={setApi}
@@ -82,8 +82,8 @@ export function LoginCarousel() {
                 <Badge className="text-lg w-fit font-medium">{badge}</Badge>
             ))}
           </div>
-          <h1 className="text-2xl font-bold">{currentSlide.title}</h1>
-          <p className="text-muted text-xl">{currentSlide.description}</p>
+          <h1 className="text-white text-2xl font-bold">{currentSlide.title}</h1>
+          <p className="text-neutral-400 text-xl">{currentSlide.description}</p>
         </div>
         <div className="absolute flex gap-2 bottom-16 left-16 z-20">
           {Array.from({ length: count }, (_, i) => i).map((i) => (
@@ -97,10 +97,12 @@ export function LoginCarousel() {
           ))}
         </div>
         <div className="absolute flex gap-4 bottom-16 right-16 z-20">
-          <button onClick={() => api?.scrollPrev()}>
+          <button className={api?.canScrollPrev() ? "text-white" : "text-neutral-700 pointer-events-none"} onClick={() => api?.scrollPrev()}>
             <FaChevronLeft className="w-6 h-6" />
           </button>
-          <button onClick={() => api?.scrollNext()}>
+          <button className={api?.canScrollNext() ? "text-white" : "text-neutral-700 pointer-events-none"}
+                  onClick={() => api?.scrollNext()}
+          >
             <FaChevronRight className="w-6 h-6" />
           </button>
         </div>
