@@ -22,7 +22,14 @@ Além dos requisitos iniciais, foram adicionados:
 - Captcha funcional (Cloudflare - Turnstile);
 - Deploy Frontend e Backend.
 
-### Frontend: React (Vite + Typescript) + **Tailwind** para facilitar a estilização;
+## Observações
+- Alguns icones utilizados no Figma são da versão paga do Font Awesome, então optei por similares. 
+
+## Configurando o Projeto
+1. Instale [Node.js 20](https://nodejs.org/en/download/package-manager)
+2. Clone o projeto para seu computador [``git clone https://github.com/doiska/teste-toolzz.git``](https://github.com/doiska/teste-toolzz.git)
+
+#### Frontend: React (Vite + Typescript) + **Tailwind** para facilitar a estilização;
 
 1. Navegue até o diretório do frontend:
 ``cd web``
@@ -39,9 +46,9 @@ Além dos requisitos iniciais, foram adicionados:
 5. Para servir a versão de produção, utilize:
 ``npm run start``
 
-### Backend: Hono Typescript (Node.js)
+#### Backend: Hono Typescript (Node.js)
 1. Navegue até o diretório do backend:
-``cd backend``
+``cd server``
 
 2. Instale as dependências:
 ``npm install``
