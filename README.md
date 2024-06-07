@@ -3,7 +3,11 @@
 - Disponível em: https://interview.twokei.com/
 - Usuário: demo | Senha: 123456
 
+## Resultado Final
 ![image](https://github.com/doiska/teste-toolzz/assets/40711231/d8ce2c6a-a642-424f-a380-f859b0fc24d4)
+
+## Figma
+![image](https://github.com/doiska/teste-toolzz/assets/40711231/aa0c1f81-442b-420a-a022-8440a1ff63a5)
 
 ## Tarefas solicitadas
 - Converter um design do Figma para uma página web funcional;
